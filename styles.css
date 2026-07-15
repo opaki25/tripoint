@@ -61,3 +61,8 @@ html,body{width:100%;max-width:100%;overflow-x:clip}
 .hero-consultant{bottom:34px}
 @media(max-width:900px){.brand img{width:200px;height:78px}.hero-consultant{bottom:28px}}
 @media(max-width:600px){.site-header .brand{max-width:190px}.brand img{width:180px;height:70px}.hero-consultant{bottom:30px}}
+
+/* Project-management hero artwork */
+.hero-consultant{width:485px;height:520px;right:2%;bottom:42px;border-radius:28px;object-fit:cover;transform:rotate(2deg);box-shadow:0 34px 70px rgba(0,0,0,.34);filter:none}
+@media(max-width:900px){.hero-consultant{width:350px;height:400px;right:-28px;bottom:48px;border-radius:22px}}
+@media(max-width:600px){.hero-consultant{width:205px;height:250px;right:-15px;bottom:88px;border-radius:16px;transform:rotate(1deg)}}
