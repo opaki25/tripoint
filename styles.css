@@ -96,3 +96,6 @@ html,body{width:100%;max-width:100%;overflow-x:clip}
 
 /* Strong mobile logo offset requested */
 @media(max-width:600px){.site-header .brand{margin-left:-70px}}
+
+/* Keep the existing header appearance fixed while scrolling */
+.site-header{position:fixed;top:0;left:0;right:0}
