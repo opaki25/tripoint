@@ -23,3 +23,11 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
 document.getElementById('year').textContent = new Date().getFullYear();
+
+const siteHeader = document.querySelector('.site-header');
+const updateHeaderBackground = () => {
+  siteHeader.classList.toggle('scrolled', window.scrollY > 24);
+};
+
+updateHeaderBackground();
+window.addEventListener('scroll', updateHeaderBackground, { passive: true });
