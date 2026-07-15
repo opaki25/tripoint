@@ -113,3 +113,8 @@ html,body{width:100%;max-width:100%;overflow-x:clip}
 .hero:before{background-image:linear-gradient(rgba(244,241,233,.56),rgba(244,241,233,.28)),url('assets/hero-handshake-background.jpg');background-position:center center}
 @media(max-width:900px){.hero{background-image:linear-gradient(90deg,rgba(7,31,53,.9) 0%,rgba(7,31,53,.67) 50%,rgba(7,31,53,.2) 100%),url('assets/hero-handshake-background.jpg')}}
 @media(max-width:600px){.hero{background-position:52% center}.hero:before{background-position:52% center}}
+
+/* Transparent growth-support hero replacement */
+.hero-consultant{width:535px;height:535px;object-fit:contain;transform:perspective(900px) rotateY(-7deg) rotateX(2deg) rotateZ(1deg) translateZ(34px)}
+@media(max-width:900px){.hero-consultant{width:405px;height:405px;right:-25px;transform:perspective(800px) rotateY(-6deg) rotateZ(1deg) translateZ(24px)}}
+@media(max-width:600px){.hero-consultant{width:235px;height:260px;right:-22px;transform:perspective(650px) rotateY(-5deg) rotateZ(1deg) translateZ(16px)}}
