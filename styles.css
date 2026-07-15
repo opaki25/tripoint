@@ -74,3 +74,10 @@ html,body{width:100%;max-width:100%;overflow-x:clip}
 .desktop-nav a,.nav-cta{color:var(--ink)}.nav-cta{border-color:rgba(8,47,82,.65);background:rgba(255,255,255,.2)}
 @media(max-width:900px){.site-header{height:106px}.brand img{width:245px;height:92px}.menu-toggle span{background:var(--ink)}}
 @media(max-width:600px){.site-header{height:100px;padding:6px 16px}.site-header .brand{max-width:225px}.brand img{width:220px;height:84px}}
+
+/* Transparent 3D project-management hero */
+.hero-art{perspective:1000px;transform-style:preserve-3d}
+.hero-art:after{content:'';position:absolute;width:390px;height:58px;right:5%;bottom:54px;border-radius:50%;background:rgba(0,0,0,.42);filter:blur(23px);transform:rotateX(68deg);z-index:1}
+.hero-consultant{width:520px;height:545px;right:0;bottom:58px;border-radius:0;object-fit:contain;box-shadow:none;filter:drop-shadow(18px 32px 20px rgba(0,0,0,.5)) drop-shadow(-8px 10px 10px rgba(32,198,174,.16));transform:perspective(900px) rotateY(-9deg) rotateX(2deg) rotateZ(2deg) translateZ(34px);z-index:3}
+@media(max-width:900px){.hero-art:after{width:285px;height:42px;right:-3%;bottom:67px}.hero-consultant{width:390px;height:430px;right:-35px;bottom:70px;filter:drop-shadow(13px 25px 15px rgba(0,0,0,.48));transform:perspective(800px) rotateY(-8deg) rotateZ(2deg) translateZ(24px)}}
+@media(max-width:600px){.hero-art:after{width:180px;height:30px;right:-13px;bottom:115px;filter:blur(14px)}.hero-consultant{width:225px;height:280px;right:-20px;bottom:122px;filter:drop-shadow(9px 18px 10px rgba(0,0,0,.5));transform:perspective(650px) rotateY(-7deg) rotateZ(1deg) translateZ(16px)}}
