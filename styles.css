@@ -87,3 +87,6 @@ html,body{width:100%;max-width:100%;overflow-x:clip}
 .hero:before{content:'';position:absolute;z-index:1;left:-2%;right:-2%;top:-22px;height:245px;background-image:linear-gradient(rgba(244,241,233,.56),rgba(244,241,233,.28)),url('assets/1000597042.jpg');background-size:cover;background-position:center 46%;filter:blur(15px) brightness(1.17);transform:scale(1.035);pointer-events:none;-webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 26%,rgba(0,0,0,.78) 48%,rgba(0,0,0,.28) 76%,transparent 100%);mask-image:linear-gradient(to bottom,#000 0%,#000 26%,rgba(0,0,0,.78) 48%,rgba(0,0,0,.28) 76%,transparent 100%)}
 @media(max-width:900px){.hero:before{height:220px;filter:blur(14px) brightness(1.18)}}
 @media(max-width:600px){.hero:before{top:-18px;height:195px;left:-5%;right:-5%;filter:blur(13px) brightness(1.2);-webkit-mask-image:linear-gradient(to bottom,#000 0%,rgba(0,0,0,.85) 36%,rgba(0,0,0,.3) 74%,transparent 100%);mask-image:linear-gradient(to bottom,#000 0%,rgba(0,0,0,.85) 36%,rgba(0,0,0,.3) 74%,transparent 100%)}}
+
+/* Balanced mobile brand and three-line menu */
+@media(max-width:600px){.site-header .brand{margin-left:-15px}.menu-toggle{margin-right:-4px;gap:5px}.menu-toggle span{width:28px;height:2px;border-radius:2px}}
