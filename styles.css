@@ -118,3 +118,8 @@ html,body{width:100%;max-width:100%;overflow-x:clip}
 .hero-consultant{width:535px;height:535px;object-fit:contain;transform:perspective(900px) rotateY(-7deg) rotateX(2deg) rotateZ(1deg) translateZ(34px)}
 @media(max-width:900px){.hero-consultant{width:405px;height:405px;right:-25px;transform:perspective(800px) rotateY(-6deg) rotateZ(1deg) translateZ(24px)}}
 @media(max-width:600px){.hero-consultant{width:235px;height:260px;right:-22px;transform:perspective(650px) rotateY(-5deg) rotateZ(1deg) translateZ(16px)}}
+
+/* Golden growth-chart hero cutout */
+.hero-consultant{width:550px;height:550px;filter:drop-shadow(16px 28px 18px rgba(0,0,0,.5)) drop-shadow(-6px 8px 10px rgba(255,184,0,.2))}
+@media(max-width:900px){.hero-consultant{width:415px;height:415px}}
+@media(max-width:600px){.hero-consultant{width:240px;height:270px}}
