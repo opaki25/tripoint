@@ -66,3 +66,11 @@ html,body{width:100%;max-width:100%;overflow-x:clip}
 .hero-consultant{width:485px;height:520px;right:2%;bottom:42px;border-radius:28px;object-fit:cover;transform:rotate(2deg);box-shadow:0 34px 70px rgba(0,0,0,.34);filter:none}
 @media(max-width:900px){.hero-consultant{width:350px;height:400px;right:-28px;bottom:48px;border-radius:22px}}
 @media(max-width:600px){.hero-consultant{width:205px;height:250px;right:-15px;bottom:88px;border-radius:16px;transform:rotate(1deg)}}
+
+/* Lightened glass header with logo directly on the page */
+.site-header{height:122px;background:linear-gradient(180deg,rgba(244,241,233,.86),rgba(244,241,233,.5));border-bottom-color:rgba(255,255,255,.42);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.site-header .brand{background:transparent;padding:0;border-radius:0;box-shadow:none;backdrop-filter:none}
+.brand img{width:285px;height:108px;filter:drop-shadow(0 5px 9px rgba(255,255,255,.5)) drop-shadow(0 4px 10px rgba(7,31,53,.14))}
+.desktop-nav a,.nav-cta{color:var(--ink)}.nav-cta{border-color:rgba(8,47,82,.65);background:rgba(255,255,255,.2)}
+@media(max-width:900px){.site-header{height:106px}.brand img{width:245px;height:92px}.menu-toggle span{background:var(--ink)}}
+@media(max-width:600px){.site-header{height:100px;padding:6px 16px}.site-header .brand{max-width:225px}.brand img{width:220px;height:84px}}
