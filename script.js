@@ -31,3 +31,7 @@ const updateHeaderBackground = () => {
 
 updateHeaderBackground();
 window.addEventListener('scroll', updateHeaderBackground, { passive: true });
+
+document.querySelectorAll('[data-placeholder-link]').forEach(link => {
+  link.addEventListener('click', event => event.preventDefault());
+});
