@@ -40,8 +40,8 @@ const socialLinksMarkup = `
   <div class="social-links footer-socials" aria-label="Tripoint contact and social links">
     <a href="https://wa.me/256781678974" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="assets/whatsapp.jpg" alt=""></a>
     <a href="mailto:tripoint.mcl@gmail.com" aria-label="Email Tripoint"><img src="assets/gmail.jpg" alt=""></a>
-    <a href="#" data-placeholder-link aria-disabled="true" aria-label="Instagram profile coming soon"><img src="assets/instagram.jpg" alt=""></a>
-    <a href="#" data-placeholder-link aria-disabled="true" aria-label="TikTok profile coming soon"><img src="assets/tiktok.jpg" alt=""></a>
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram placeholder"><img src="assets/instagram.jpg" alt=""></a>
+    <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok placeholder"><img src="assets/tiktok.jpg" alt=""></a>
     <a href="https://www.google.com/maps/search/?api=1&query=Arua+City+Uganda" target="_blank" rel="noopener" aria-label="Find Tripoint in Arua City"><img src="assets/maps.jpg" alt=""></a>
   </div>`;
 
