@@ -36,6 +36,15 @@ document.querySelectorAll('[data-placeholder-link]').forEach(link => {
   link.addEventListener('click', event => event.preventDefault());
 });
 
+document.querySelectorAll('.back-to-top').forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault();
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, left: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+    window.history.replaceState(null, '', '#top');
+  });
+});
+
 const socialLinksMarkup = `
   <div class="social-links footer-socials" aria-label="Tripoint contact and social links">
     <a href="https://wa.me/256781678974" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="assets/whatsapp.jpg" alt=""><span>WhatsApp</span></a>
