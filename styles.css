@@ -181,3 +181,8 @@ img{max-width:100%}main,section,header,footer,.page-hero,.page-section,.contact-
 /* Label footer platform icons on larger screens */
 .footer-socials a{gap:10px;font-size:12px;font-weight:700;white-space:nowrap}.footer-socials a span{display:inline-block}
 @media(max-width:600px){.footer-socials a span{display:none}}
+
+/* Three-column homepage footer after removing duplicate contact block */
+footer:not(.simple-footer){grid-template-columns:1.4fr 1fr 1.2fr}
+@media(max-width:900px){footer:not(.simple-footer){grid-template-columns:1fr 1fr}.footer-end{grid-column:1/-1}}
+@media(max-width:600px){footer:not(.simple-footer){grid-template-columns:1fr}.footer-end{grid-column:auto}}
