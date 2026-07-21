@@ -168,3 +168,8 @@ img{max-width:100%}main,section,header,footer,.page-hero,.page-section,.contact-
 /* Responsive principle cards and sector pills */
 @media(max-width:800px){.why-grid{grid-template-columns:1fr}.why-grid article{border-left:0;border-top:1px solid var(--line);padding:28px 0;min-width:0}.why-grid article:first-child{border-top:0}.why-grid h3{margin-top:18px}.sector-cloud{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%;align-content:initial}.sector-cloud span{display:flex;align-items:center;justify-content:center;min-width:0;width:100%;text-align:center;line-height:1.35}}
 @media(max-width:480px){.sector-cloud{grid-template-columns:1fr}.sector-cloud span{padding:13px 15px}.why-grid article{padding:24px 0}}
+
+/* Match social/contact rows with full-width dividing lines */
+.contact-socials{width:100%;max-width:none;gap:0}
+.contact-socials a{width:100%;padding:14px 0;border-bottom:1px solid rgba(8,47,82,.3)}
+@media(max-width:600px){.contact-socials{width:max-content;gap:9px}.contact-socials a{width:auto;padding:0;border-bottom:0}}
