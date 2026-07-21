@@ -45,22 +45,19 @@ document.querySelectorAll('.back-to-top').forEach(link => {
   });
 });
 
-const socialLinksMarkup = `
+const footerLinksMarkup = `
   <div class="social-links footer-socials" aria-label="Tripoint contact and social links">
-    <a href="https://wa.me/256781678974" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="assets/whatsapp.jpg" alt=""><span>WhatsApp</span></a>
-    <a href="mailto:tripoint.mcl@gmail.com" aria-label="Email Tripoint"><img src="assets/gmail.jpg" alt=""><span>Email us</span></a>
-    <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram placeholder"><img src="assets/instagram.jpg" alt=""><span>Instagram</span></a>
-    <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok placeholder"><img src="assets/tiktok.jpg" alt=""><span>TikTok</span></a>
-    <a href="https://www.google.com/maps/search/?api=1&query=Arua+City+Uganda" target="_blank" rel="noopener" aria-label="Find Tripoint in Arua City"><img src="assets/maps.jpg" alt=""><span>Find us</span></a>
+    <a href="mailto:tripoint.mcl@gmail.com"><img src="assets/gmail.jpg" alt=""><span><small>Email</small><strong>tripoint.mcl@gmail.com</strong></span><b>↗</b></a>
+    <a href="tel:+256781678974"><img src="assets/phone.jpg" alt=""><span><small>Call</small><strong>+256 781 678 974</strong></span><b>↗</b></a>
+    <a href="https://wa.me/256781678974" target="_blank" rel="noopener"><img src="assets/whatsapp.jpg" alt=""><span><small>WhatsApp</small><strong>Chat with Tripoint</strong></span><b>↗</b></a>
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="assets/instagram.jpg" alt=""><span><small>Instagram</small><strong>@tripoint.mcl</strong></span><b>↗</b></a>
+    <a href="https://www.tiktok.com/" target="_blank" rel="noopener"><img src="assets/tiktok.jpg" alt=""><span><small>TikTok</small><strong>@tripoint.mcl</strong></span><b>↗</b></a>
+    <a href="https://www.google.com/maps/search/?api=1&query=Arua+City+Uganda" target="_blank" rel="noopener"><img src="assets/maps.jpg" alt=""><span><small>Find us</small><strong>Arua City, Uganda</strong></span><b>↗</b></a>
   </div>`;
 
-document.querySelectorAll('.simple-footer').forEach(footer => {
-  const location = footer.querySelector('p');
-  if (location) {
-    location.insertAdjacentHTML('afterend', '<div class="simple-footer-contact"><a href="mailto:tripoint.mcl@gmail.com">tripoint.mcl@gmail.com</a><a href="tel:+256781678974">+256 781 678 974</a></div>');
-  }
-  footer.insertAdjacentHTML('beforeend', socialLinksMarkup);
-});
+const contactSocialLinksMarkup = `<div class="social-links footer-socials"><a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="assets/instagram.jpg" alt=""><span>Instagram</span></a><a href="https://www.tiktok.com/" target="_blank" rel="noopener"><img src="assets/tiktok.jpg" alt=""><span>TikTok</span></a></div>`;
+
+document.querySelectorAll('.simple-footer').forEach(footer => footer.insertAdjacentHTML('beforeend', footerLinksMarkup));
 
 const contactPanel = document.querySelector('.contact-page .contact-panel');
 if (contactPanel) {
@@ -69,7 +66,7 @@ if (contactPanel) {
     <a href="tel:+256781678974"><img src="assets/phone.jpg" alt=""><span><small>Call</small><strong>+256 781 678 974</strong></span><b>↗</b></a>
     <a href="https://wa.me/256781678974" target="_blank" rel="noopener"><img src="assets/whatsapp.jpg" alt=""><span><small>WhatsApp</small><strong>Message us</strong></span><b>↗</b></a>
     <a href="https://www.google.com/maps/search/?api=1&query=Arua+City+Uganda" target="_blank" rel="noopener"><img src="assets/maps.jpg" alt=""><span><small>Head office</small><strong>Arua City, Uganda</strong></span><b>↗</b></a>
-    <div class="contact-panel-socials"><span>Follow Tripoint</span>${socialLinksMarkup}</div>`;
+    <div class="contact-panel-socials"><span>Follow Tripoint</span>${contactSocialLinksMarkup}</div>`;
 }
 
 document.querySelectorAll('[data-placeholder-link]').forEach(link => {
