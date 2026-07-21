@@ -174,3 +174,6 @@ img{max-width:100%}main,section,header,footer,.page-hero,.page-section,.contact-
 .contact-socials a{display:grid;grid-template-columns:44px minmax(0,1fr) 24px;align-items:center;gap:13px;width:100%;padding:14px 0;border-bottom:1px solid rgba(8,47,82,.3)}
 .contact-socials a>span{display:flex;min-width:0;flex-direction:column;gap:5px}.contact-socials small{text-transform:uppercase;letter-spacing:.12em;font-weight:400}.contact-socials strong{font-size:14px;overflow-wrap:anywhere}.contact-socials b{margin-left:auto;font-weight:400}
 @media(max-width:600px){.contact-socials{width:max-content;gap:9px}.contact-socials a{display:flex;width:auto;padding:0;border-bottom:0}.contact-socials a>span,.contact-socials b{display:none}}
+
+/* Transparent project-management artwork on the section background */
+.contact-art{background:transparent}.contact-art img{object-fit:contain;mix-blend-mode:normal}
